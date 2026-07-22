@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    color:#333333;
+    display: flex;
+    align-items: center;
+    min-height: 100;
+    padding: 20px;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width:100%;
+    padding: 600px;
+    border: radius 12px; ;
+    box-shadow: 0 10px 25px rgba(45, 11, 67, 0.08);
+    border:1px solid #eae5df; 
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 1.5rem;
+    
+}
+
+.grid-fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 1.5rem;
+}
+
+.full-width{
+    grid-column: 1 / -1;
+}
+
+.header{
+    text-align:center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f3effe;
+    padding-bottom:15px ;
+}
+
+h1{
+    color: #2d0b43;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h1 span{
+    color: #5c3d75;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: #5c3d75;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    background-color: #f3effe;
+    color: #9d4edd;
+}
+
+.form-gorup{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:  column;
+}
+
+label{
+    color: #2d0b43;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+select{
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #DCD6E8;
+    border-radius: 8px;
+    background-color: #FAF9F6;
+    color: #2d0b43;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+input:focus, select:focus{
+    border-color: #9d4edd;
+    box-shadow: 0 0 0 3px rgba(157, 78, 221, 0.2);
+    background-color: #FFFFFF;
+}
+
+input[type="radio"]{
+    accent-color: #9d4edd;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+button [type="submit"]{
+    width: 100%;
+    background-color: #9d4edd;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:  backgorund-color 0.3s ease, transform 0.1s ease;
+}
+
+button [type="submit"]:hover{
+    background-color: #2d0b43;
+}
+
+button [type="submit"]:active{
+    scale:(0.98);
+}

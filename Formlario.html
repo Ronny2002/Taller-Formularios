@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ronny Sánchez</title>
+    <link rel="stylesheet" href="Style_form.css">
+    <img src="Imagen.jpeg" alt="Logo del taller" class="logo" width="100" height="100">
+</head>
+<body>
+    
+    <div class = "container">
+
+        <header>
+            <h1><span>Taller</span> Ronny Sánchez</h1>
+            <nav>
+                <a href="Index.html">Inicio</a>
+                <a href="Formlario.html">Formulario de registro</a> 
+                <a href="Consulta.html">Consulta de datos</a>
+                <a href="Acerca.html">Acerca de</a>
+                
+            </nav>
+        </header>
+
+        <div class="form-group">
+            <main>
+                <form action="#" method="post" class="grid-fieldset">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div>
+                        <label for="Cedula">Cedula:</label>
+                        <input type="string" id="Cedula" name="Cedula" required>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion full-width">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{11}" title="example 0000-0000000" required>
+                    </div> 
+                    <div class="form-group">
+                    <label for="tipoCliente">Tipo de Tipo Cliente:</label> <br>
+                    <label for="ClienteN">Cliente Natural</label>
+                    <input type="radio" id="tipoCliente" name="tipoCliente" required>
+                    <label for="tipoCliente">Cliente Juridico</label>
+                    <input type="radio" id="tipoCliente" name="tipoCliente" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="TipoIdustria"> Tipo de Industria:</label>
+                        <select id="TipoIdustria" name="TipoIdustria">
+                            <option value="Seleccione una opción"> Selecciones una opción</option> 
+                            <option value="Tecnología"> Tecnología</option> 
+                            <option value="Comercio">Comercio</option> 
+                            <option value="Salud"> Salud</option>
+                            <option value="Educación"> Educación</option>  
+                    </div>
+                    <button type="submit">Registrarse</button>
+            </main>
+        </div>
+     
+    </div>
+
+</body>
+</html>
